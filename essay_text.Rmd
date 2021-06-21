@@ -1,0 +1,47 @@
+---
+title: "Ten simple rules for statistical analyses"
+author:
+  - Mark D. Scheuerell:
+      email: scheuerl@uw.edu
+      institute: wacfwru
+      correspondence: true
+  - name: Sarah J. Converse
+    institute: wacfwru
+institute:
+  - wacfwru: U.S. Geological Survey Washington Cooperative Fish and Wildlife Research Unit, School of Aquatic and Fishery Sciences, University of Washington, Seattle, WA
+output:
+  pdf_document:
+    pandoc_args:
+      - '--lua-filter=scholarly-metadata.lua'
+      - '--lua-filter=author-info-blocks.lua'
+documentclass: article
+geometry: margin=1in
+linestretch: 2
+header-includes:
+  - \usepackage{lineno}
+  - \linenumbers
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+author: "Mark D. Scheuerell, Sarah J. Converse"
+date: "U.S. Geological Survey Washington Cooperative Fish and Wildlife Research Unit, School of Aquatic and Fishery Sciences, University of Washington, Seattle, WA"
+
+
+author:
+  - Mario Modesto-Mata:
+      email: paleomariomm@gmail.com
+      institute: [astro, med]
+      correspondence: true
+  - name: Christopher
+    institute: astro
+  - name: Seaghán Mhartain
+    institute: med
+  - name: Rita Yuri Ynoue
+    institute: astro
+institute:
+  - astro: Instituto de Astronomía, Geofísica e Ciências Atmosféricas, Universidade de São Paulo
+  - med: Faculdade de Medicina, Universidade de São Paulo

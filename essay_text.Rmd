@@ -11,18 +11,20 @@ institute:
   - wacfwru: U.S. Geological Survey Washington Cooperative Fish and Wildlife Research Unit, School of Aquatic and Fishery Sciences, University of Washington, Seattle, WA
 output:
   pdf_document:
+    highlight: haddock
     pandoc_args:
       - '--lua-filter=scholarly-metadata.lua'
       - '--lua-filter=author-info-blocks.lua'
 documentclass: article
 geometry: margin=1in
-linestretch: 2
+linestretch: 1.1
 fontsize: 12pt
 header-includes:
   - \usepackage{lineno}
   - \linenumbers
 bibliography: "references.bib"
 csl: "aslo.csl"
+urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -38,7 +40,7 @@ library("knitcitations")
 options("citation_format" = "pandoc")
 ```
 
-\vspace{3.5in}
+\vspace{4in}
 
 This draft manuscript is distributed solely for purposes of scientific peer review. Its content is deliberative and predecisional, so it must not be disclosed or released by reviewers. Because the manuscript has not yet been approved for publication by the U.S. Geological Survey (USGS), it does not represent any official USGS finding or policy.
 
@@ -46,34 +48,87 @@ This draft manuscript is distributed solely for purposes of scientific peer revi
 
 ## Notes for Sarah & Mark
 
-### Example
+### Journal guidelines
 
-As an example, here is the first essay of this type for the journal:
+Here is the information from the journal's [author guidelines](https://aslopubs.onlinelibrary.wiley.com/hub/journal/23782242/about/author-guidelines#Articletypes):
 
-https://aslopubs.onlinelibrary.wiley.com/doi/full/10.1002/lol2.10165
+> Essays should include ideas, concepts, hypotheses, or opinions to stimulate discussion, debate or research. Essays can be written as opinion pieces that are well-reasoned with well-supported arguments and ideas, but where extensive citations are not needed or available. Essays should be written in clear and general language that are understandable to a broad audience.
+
+> - 2,500 words maximum (includes main-body text only; excluding significance statement, acknowledgements, and references) and 1-3 visuals (figures, tables, or boxes).
+
+> - Essays should include: Significance statement, text (sub-headings are optional), references. Note that essays do not include an abstract.
+
+### Essay example
+
+As an example, [here](https://aslopubs.onlinelibrary.wiley.com/doi/full/10.1002/lol2.10165) is the first essay of this type for the journal.
 
 ### Generating references
 
+There are a couple of ways to add references to the `references.bib` file. The first is to copy/paste them from any reference software that will display them in `.bib` format (e.g., EndNote, Zotero). For example,
 
+```{r, eval = FALSE, echo = TRUE}
+@Article{Smith_2021,
+  year = {2021},
+  publisher = {The Ecological Society of America},
+  volume = {123},
+  number = {2},
+  pages = {1-10},
+  author = {Jane Smith and Joe Johnson},
+  title = {Probably the best paper ever written},
+  journal = {Ecology},
+}
+```
+
+The second is to use the `{knitcitations}` package, which will load when the `.Rmd` file is knit. Here is an example of an inline **`R`** command that will
+
+1) create an entry in `references.bib` for Hotaling (2020) linked to above;
+2) display a properly formatted citation in the text; and
+3) add a formatted entry to the References section.
+
+```{r eval = FALSE, echo = TRUE}
+`r citet("10.1002/lol2.10165")`
+```
 
 `r citet("10.1002/lol2.10165")`
 
+You can see other examples [here](https://fish497.github.io/website/lectures/week_07/lec_20_markdown_1.html#knitcitations_package).
+
 \newpage
+
+# Scientific significance statement
+
+[ _This section and heading are required._ ]
+
+For example, here's what Scott wrote in his essay:
+
+> One of the most common editorial refrains, regardless of discipline, is “this needs to be tighter.” It typically means too many words and ideas are jumbled together and the underlying point is obscure. The writing is not concise. But, improving conciseness is difficult because the problem is caused by a host of factors that are easily overlooked, especially by early career researchers. Here, I describe what it means to write concisely and outline 10 rules, with examples, to help scientists tighten their prose.
+
+# Introduction
+
+[ _This section was 3 paragraphs in Scott's essay (and it lacked an actual heading)._ ]
+
 
 # Rules for statistical analysis
 
-\footnote{This is just a placeholder.}
+[ _The above heading is just a placeholder._ ]
 
 
 # Conclusion
+
+[ _The above heading is just a placeholder and is not actually necessary._ ]
 
 
 # Conflict of interest
 
 The authors have no conflicts of interest.
 
+
 # Acknowledgments
 
+We wish to thank...
+
+
+\newpage
 
 # References
 

@@ -17,31 +17,69 @@ output:
 documentclass: article
 geometry: margin=1in
 linestretch: 2
+fontsize: 12pt
 header-includes:
   - \usepackage{lineno}
   - \linenumbers
-fontsize: 12pt
+bibliography: "references.bib"
+csl: "aslo.csl"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+## load {knitcitations}
+library("knitcitations")
+
+## clean out any existing .bib files
+# cleanbib()
+
+## set pandoc for formatting
+options("citation_format" = "pandoc")
 ```
 
-author: "Mark D. Scheuerell, Sarah J. Converse"
-date: "U.S. Geological Survey Washington Cooperative Fish and Wildlife Research Unit, School of Aquatic and Fishery Sciences, University of Washington, Seattle, WA"
+\vspace{3.5in}
+
+This draft manuscript is distributed solely for purposes of scientific peer review. Its content is deliberative and predecisional, so it must not be disclosed or released by reviewers. Because the manuscript has not yet been approved for publication by the U.S. Geological Survey (USGS), it does not represent any official USGS finding or policy.
+
+\newpage
+
+## Notes for Sarah & Mark
+
+### Example
+
+As an example, here is the first essay of this type for the journal:
+
+https://aslopubs.onlinelibrary.wiley.com/doi/full/10.1002/lol2.10165
+
+### Generating references
 
 
-author:
-  - Mario Modesto-Mata:
-      email: paleomariomm@gmail.com
-      institute: [astro, med]
-      correspondence: true
-  - name: Christopher
-    institute: astro
-  - name: Seaghán Mhartain
-    institute: med
-  - name: Rita Yuri Ynoue
-    institute: astro
-institute:
-  - astro: Instituto de Astronomía, Geofísica e Ciências Atmosféricas, Universidade de São Paulo
-  - med: Faculdade de Medicina, Universidade de São Paulo
+
+`r citet("10.1002/lol2.10165")`
+
+\newpage
+
+# Rules for statistical analysis
+
+\footnote{This is just a placeholder.}
+
+
+# Conclusion
+
+
+# Conflict of interest
+
+The authors have no conflicts of interest.
+
+# Acknowledgments
+
+
+# References
+
+```{r}
+## create ref cited section
+write.bibtex(file = "references.bib")
+```
+
+

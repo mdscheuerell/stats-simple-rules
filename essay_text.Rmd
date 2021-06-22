@@ -112,6 +112,35 @@ For example, here's what Scott wrote in his essay:
 
 [ _The above heading is just a placeholder._ ]
 
+Here are some possible topics, ordered around the notions of before, during, and after a study/analysis, which we had discussed briefly.
+
+## Before beginning
+
+* Do not mix frequentist and Bayesian paradigms
+
+    - We're not making a judgment call here, but merely pointing out that there are important philosophical differences that should not be confused/conflated.
+
+* Consider acceptable levels of Type-I and Type-II errors
+
+    - If frequentist, choose an $\alpha$-value ahead of time
+
+## During analysis
+
+* Model diagnostics are an important part of any analysis
+
+    - Every model or test involves assumptions; are they met?
+
+
+## Reporting (after)
+
+* Effect size is more important than a p-value
+
+    - Highly replicated experiments have large power to detect differences/effect, but are they meaningful?
+
+* Model selection exercises will always find a "best" model
+
+    - Model selection via in-sample (eg, AIC) or out-of-sample (eg, LOO) will identify a best model, but the question is how good is it?
+    
 
 # Conclusion
 

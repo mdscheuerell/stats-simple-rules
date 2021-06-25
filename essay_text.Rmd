@@ -1,5 +1,5 @@
 ---
-title: "Ten simple rules for statistical analyses"
+title: "Simple rules for statistical analyses"
 author:
   - Mark D. Scheuerell:
       email: scheuerl@uw.edu
@@ -89,7 +89,7 @@ The second is to use the `{knitcitations}` package, which will load when the `.R
 `r citet("10.1002/lol2.10165")`
 ```
 
-`r citet("10.1002/lol2.10165")`
+[@Hotaling_2020]
 
 You can see other examples [here](https://fish497.github.io/website/lectures/week_07/lec_20_markdown_1.html#knitcitations_package).
 
@@ -120,9 +120,9 @@ Here are some possible topics, ordered around the notions of before, during, and
 
     - We're not making a judgment call here, but merely pointing out that there are important philosophical differences that should not be confused/conflated.
 
-* Consider acceptable levels of Type-I and Type-II errors
+* If using a frequentist framework, consider acceptable levels of Type-I and Type-II errors
 
-    - If frequentist, choose an $\alpha$-value ahead of time
+    - Choose an $\alpha$-value ahead of time
 
 ## During analysis
 
@@ -132,6 +132,12 @@ Here are some possible topics, ordered around the notions of before, during, and
 
 
 ## Reporting (after)
+
+* General notions of p-values from Wasserstein [-@Wasserstein_2019]
+
+* Correlation is not causation
+
+    - Unfortunately, this bears repeating...
 
 * Effect size is more important than a p-value
 
@@ -168,7 +174,7 @@ We wish to thank...
 
 ```{r}
 ## create ref cited section
-write.bibtex(file = "references.bib")
+# write.bibtex(file = "references.bib")
 ```
 
 

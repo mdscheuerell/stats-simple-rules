@@ -116,6 +116,10 @@ Here are some possible topics, ordered around the notions of before, during, and
 
 ## Before beginning
 
+* Identify your primary motivation and scope for inference
+
+    - Is it retrospective understanding? Extrapolation? Forecasting?
+
 * Do not mix frequentist and Bayesian paradigms
 
     - We're not making a judgment call here, but merely pointing out that there are important philosophical differences that should not be confused/conflated.
@@ -123,6 +127,11 @@ Here are some possible topics, ordered around the notions of before, during, and
 * If using a frequentist framework, consider acceptable levels of Type-I and Type-II errors
 
     - Choose an $\alpha$-value ahead of time
+
+* When the data are spatial or temporal, account for autocorrelation
+
+    - If not, model assumptions not met; p-values are biased
+    
 
 ## During analysis
 

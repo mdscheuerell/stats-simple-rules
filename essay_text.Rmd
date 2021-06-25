@@ -161,6 +161,11 @@ We wish to thank...
 
 # References
 
+\setlength{\parindent}{-0.375in}
+\setlength{\leftskip}{0.375in}
+\setlength{\parskip}{8pt}
+\noindent
+
 ```{r}
 ## create ref cited section
 write.bibtex(file = "references.bib")

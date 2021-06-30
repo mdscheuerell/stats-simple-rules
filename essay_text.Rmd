@@ -119,6 +119,10 @@ Here are some possible topics, ordered around the notions of before, during, and
 * Identify your primary motivation and scope for inference
 
     - Is it retrospective understanding? Extrapolation? Forecasting?
+    
+* Make sure you understand the assumptions and limitations for any approach
+
+    - eg, could you explain this to both your grandmother and the editor?
 
 * Do not mix frequentist and Bayesian paradigms
 
@@ -127,6 +131,8 @@ Here are some possible topics, ordered around the notions of before, during, and
 * If using a frequentist framework, consider acceptable levels of Type-I and Type-II errors
 
     - Choose an $\alpha$-value ahead of time
+    
+    - avoid the use of *//**//*** to indicate significance at varying levels 
 
 * When the data are spatial or temporal, account for autocorrelation
 
@@ -134,6 +140,12 @@ Here are some possible topics, ordered around the notions of before, during, and
     
 
 ## During analysis
+
+* Make it reproducible
+
+    - provide the data and code necessary to replicate your analyses
+    
+    - if there are any proprietary data, provide a minimal work example
 
 * Model diagnostics are an important part of any analysis
 
@@ -152,9 +164,17 @@ Here are some possible topics, ordered around the notions of before, during, and
 
     - Highly replicated experiments have large power to detect differences/effect, but are they meaningful?
 
-* Model selection exercises will always find a "best" model
+* Being the best is not always good
 
-    - Model selection via in-sample (eg, AIC) or out-of-sample (eg, LOO) will identify a best model, but the question is how good is it?
+    - Model selection exercises, particularly via in-sample methods (eg, AIC), will identify a best model, but the question is how good is it?
+    
+    - report other measures like $R^2$
+    
+    - use other methods such as out-of-sample (eg, leave-$k$-out cross validation) based on metrics that address both bias and precision (eg, RMSE)
+
+* Report all of the information from statistical tests--don't make reviewers and editors guess
+
+    - eg, both df needed for F-test
     
 
 # Conclusion

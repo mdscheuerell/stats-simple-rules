@@ -147,6 +147,10 @@ Here are some possible topics, ordered around the notions of before, during, and
     
     - if there are any proprietary data, provide a minimal work example
 
+* Don't do statistics on statistics
+
+    - reframe your analysis to better match the objective
+
 * Model diagnostics are an important part of any analysis
 
     - Every model or test involves assumptions; are they met?

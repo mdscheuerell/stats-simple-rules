@@ -132,7 +132,7 @@ Here are some possible topics, ordered around the notions of before, during, and
 
     - Choose an $\alpha$-value ahead of time
     
-    - avoid the use of *//**//*** to indicate significance at varying levels 
+    - avoid the use of asterisks (eg, $*/**/***$) to indicate significance at varying levels 
 
 * When the data are spatial or temporal, account for autocorrelation
 

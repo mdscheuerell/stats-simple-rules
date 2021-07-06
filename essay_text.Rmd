@@ -103,9 +103,18 @@ For example, here's what Scott wrote in his essay:
 
 > One of the most common editorial refrains, regardless of discipline, is “this needs to be tighter.” It typically means too many words and ideas are jumbled together and the underlying point is obscure. The writing is not concise. But, improving conciseness is difficult because the problem is caused by a host of factors that are easily overlooked, especially by early career researchers. Here, I describe what it means to write concisely and outline 10 rules, with examples, to help scientists tighten their prose.
 
-# Introduction
+# Background
 
 [ _This section was 3 paragraphs in Scott's essay (and it lacked an actual heading)._ ]
+
+## What is statistics?
+
+
+## Why do we do it?
+
+
+## What are the major philosophies?
+
 
 
 # Rules for statistical analysis
@@ -138,6 +147,12 @@ Here are some possible topics, ordered around the notions of before, during, and
 
     - If not, model assumptions not met; p-values are biased
     
+* Statistical hypotheses are not the same as scientific hypotheses
+
+    - intentions/motivations should be considered a priori
+
+    - the need for strong null hypotheses
+    
 
 ## During analysis
 
@@ -156,11 +171,11 @@ Here are some possible topics, ordered around the notions of before, during, and
     - Every model or test involves assumptions; are they met?
 
 
-## Reporting (after)
+## Inference & interpretation
 
 * General notions of p-values from Wasserstein [-@Wasserstein_2019]
 
-* Correlation is not causation
+* [possible box item] Correlation is not causation
 
     - Unfortunately, this bears repeating...
 
@@ -176,7 +191,7 @@ Here are some possible topics, ordered around the notions of before, during, and
     
     - use other methods such as out-of-sample (eg, leave-$k$-out cross validation) based on metrics that address both bias and precision (eg, RMSE)
 
-* Report all of the information from statistical tests--don't make reviewers and editors guess
+* [possible box item] Report all of the information from statistical tests--don't make reviewers and editors guess
 
     - eg, both df needed for F-test
     

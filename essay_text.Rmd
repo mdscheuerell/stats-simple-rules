@@ -115,6 +115,7 @@ For example, here's what Scott wrote in his essay:
 
 ## What are the major philosophies?
 
+[ _Maybe we want to explain our motivation for writing this?_ ]
 
 
 # Rules for statistical analysis
@@ -123,7 +124,11 @@ For example, here's what Scott wrote in his essay:
 
 Here are some possible topics, ordered around the notions of before, during, and after a study/analysis, which we had discussed briefly.
 
-## Before beginning
+## Before beginning 
+
+[ _is this more "big picture" rather than "before beginning?"_ ]
+
+[ _A useful point to make here is that most of the important stuff happens before you start._ ]
 
 * Identify your primary motivation and scope for inference
 
@@ -139,6 +144,10 @@ Here are some possible topics, ordered around the notions of before, during, and
 
 * If using a frequentist framework, consider acceptable levels of Type-I and Type-II errors
 
+[ _all frequentists aren't doing tests - you might just want to estimate something, in which case you're probably going to decide on what you want alpha to be for confidence limits, but Bayesians do that too - let's distinguish frequentist from testing_ ]
+
+[ _also we should get people to question why they are doing tests at all - they are rarely the best way to go_ ]
+
     - Choose an $\alpha$-value ahead of time
     
     - avoid the use of asterisks (eg, $*/**/***$) to indicate significance at varying levels 
@@ -147,6 +156,8 @@ Here are some possible topics, ordered around the notions of before, during, and
 
     - If not, model assumptions not met; p-values are biased
     
+[ _should this go in "during analysis?" seems more detailed than others in this section_ ]
+
 * Statistical hypotheses are not the same as scientific hypotheses
 
     - intentions/motivations should be considered a priori
@@ -162,6 +173,10 @@ Here are some possible topics, ordered around the notions of before, during, and
     
     - if there are any proprietary data, provide a minimal work example
 
+* Understand your data 
+
+    - something as simple as plotting the data early on could save a lot of headaches later 
+
 * Don't do statistics on statistics
 
     - reframe your analysis to better match the objective
@@ -173,7 +188,14 @@ Here are some possible topics, ordered around the notions of before, during, and
 
 ## Inference & interpretation
 
-* General notions of p-values from Wasserstein [-@Wasserstein_2019]
+* Design and intention matter 
+
+    - Don't come up with hypotheses after the fact and pretend they were a priori - the inferential strength is different 
+
+    - Data dredge if you want - but be honest that that is what you're doing 
+
+    
+* General notions of p-values from Wasserstein [-@Wasserstein_2019] [ _also Johnson 1999_ ]
 
 * [possible box item] Correlation is not causation
 
